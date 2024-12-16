@@ -5,10 +5,6 @@
 #include <pthread.h>
 
 
-
-
-
-
 #define NSIZE       128
 #define VERIFY      0
 
@@ -192,9 +188,6 @@ void computeGauss(int nsize)
 	// Wait for thread termination
 	for(t=0; t<num_threads; t++)
 		pthread_join(threadsInt[t], &status);
-
-
-
 
 
 		/*for (j = i + 1 ; j < nsize; j++){
