@@ -1,8 +1,4 @@
-/* 
- * Original author:  UNKNOWN
- *
- * Modified:         Kai Shen (January 2010)
- */
+
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -15,9 +11,7 @@
 
 /* #define DEBUG */
 
-
 int num_threads = 8;
-
 
 #define SWAP(a,b)       {double tmp; tmp = a; a = b; b = tmp;}
 
@@ -25,10 +19,7 @@ int num_threads = 8;
  *   matrix * X = R
  */
 
-
 double **matrix, *X, *R;
-
-
 
 /* Pre-set solution. */
 
@@ -52,11 +43,6 @@ int initMatrix(const char *fname)
 	fprintf(stderr, "The matrix file open error\n");
         exit(-1);
     }
-
-
-
-
-
 
 
     /* Parse the first line to get the matrix size. */
